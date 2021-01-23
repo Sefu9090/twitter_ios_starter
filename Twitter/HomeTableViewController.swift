@@ -19,7 +19,7 @@ class HomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadMoreTweets()
-        myRefreshControll.addTarget(self, action: #selector(loadMoreTweets), for: .valueChanged)
+        myRefreshControll.addTarget(self, action: #selector(loadTweets), for: .valueChanged)
         tableView.refreshControl = myRefreshControll
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -27,6 +27,24 @@ class HomeTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    @objc func loadTweets(){
+        let tweetsURL = "https://api.twitter.com/1.1/statuses/home_timeline.json"
+        let myParams = ["count": numberOfTweets]
+        TwitterAPICaller.client?.getDictionariesRequest(url: tweetsURL, parameters: myParams, success: { (tweets: [NSDictionary]) in
+            self.tweetArray.removeAll()
+            for tweet in tweets{
+                self.tweetArray.append(tweet)
+            }
+            
+            self.tableView.reloadData()
+            self.myRefreshControll.endRefreshing()
+
+        }, failure: { (Error) in
+            print("COULD NOT RETRIEVE TWEETS")
+        })
+    }
+    
     
     @objc func loadMoreTweets() {
         let tweetsURL = "https://api.twitter.com/1.1/statuses/home_timeline.json"
