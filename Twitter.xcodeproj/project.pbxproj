@@ -13,6 +13,9 @@
 		6EBCF52B21DF07FC00451C03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EBCF52921DF07FC00451C03 /* Main.storyboard */; };
 		6EBCF54421E047A500451C03 /* TwitterAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBCF54321E047A500451C03 /* TwitterAPICaller.swift */; };
 		6EBCF54E21E71F9400451C03 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EBCF54D21E71F9400451C03 /* Launch Screen.storyboard */; };
+		8C13735925C697340001DF8E /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C13735825C697340001DF8E /* TweetViewController.swift */; };
+		8C13735C25C6B87E0001DF8E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C13735B25C6B87E0001DF8E /* ProfileViewController.swift */; };
+		8C13735F25C6B8B10001DF8E /* PressedTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C13735E25C6B8B10001DF8E /* PressedTweetViewController.swift */; };
 		8CB816D225BA7FD500E78A1E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB816D125BA7FD500E78A1E /* LoginViewController.swift */; };
 		8CB816D525BA87D400E78A1E /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB816D425BA87D400E78A1E /* HomeTableViewCell.swift */; };
 		8CB816D825BA881200E78A1E /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CB816D725BA881200E78A1E /* HomeTableViewController.swift */; };
@@ -28,6 +31,9 @@
 		6EBCF54321E047A500451C03 /* TwitterAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAPICaller.swift; sourceTree = "<group>"; };
 		6EBCF54D21E71F9400451C03 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		872C2D82F41D5A5D2A920E9E /* Pods_Twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C13735825C697340001DF8E /* TweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
+		8C13735B25C6B87E0001DF8E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8C13735E25C6B8B10001DF8E /* PressedTweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressedTweetViewController.swift; sourceTree = "<group>"; };
 		8CB816D125BA7FD500E78A1E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		8CB816D425BA87D400E78A1E /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		8CB816D725BA881200E78A1E /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
@@ -85,6 +91,9 @@
 				8CB816D125BA7FD500E78A1E /* LoginViewController.swift */,
 				8CB816D425BA87D400E78A1E /* HomeTableViewCell.swift */,
 				8CB816D725BA881200E78A1E /* HomeTableViewController.swift */,
+				8C13735825C697340001DF8E /* TweetViewController.swift */,
+				8C13735B25C6B87E0001DF8E /* ProfileViewController.swift */,
+				8C13735E25C6B8B10001DF8E /* PressedTweetViewController.swift */,
 			);
 			path = Twitter;
 			sourceTree = "<group>";
@@ -211,7 +220,10 @@
 			files = (
 				8CB816D225BA7FD500E78A1E /* LoginViewController.swift in Sources */,
 				6EBCF54421E047A500451C03 /* TwitterAPICaller.swift in Sources */,
+				8C13735F25C6B8B10001DF8E /* PressedTweetViewController.swift in Sources */,
+				8C13735925C697340001DF8E /* TweetViewController.swift in Sources */,
 				8CB816D525BA87D400E78A1E /* HomeTableViewCell.swift in Sources */,
+				8C13735C25C6B87E0001DF8E /* ProfileViewController.swift in Sources */,
 				6EBCF52621DF07FC00451C03 /* AppDelegate.swift in Sources */,
 				8CB816D825BA881200E78A1E /* HomeTableViewController.swift in Sources */,
 			);
@@ -357,7 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 835835HRZ6;
 				INFOPLIST_FILE = Twitter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -377,7 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 835835HRZ6;
 				INFOPLIST_FILE = Twitter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
